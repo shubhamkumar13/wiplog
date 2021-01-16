@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to serde like a noob"
-date:   2021-17-1 10:18:00
+date:   2021-1-17 05:06:00
 categories: Rust
 ---
 
