@@ -78,7 +78,7 @@ type token_type =
 [@@deriving show { with_path = false }, eq, ord]
 ```
 
-The only thing that I am not going to explain is the `[@@@deriving show { with_path = false }, eq, ord]` part because the only thing I know is that it's a `ppx` and this specific ppx is [`ppx_deriving`](https://github.com/ocaml-ppx/ppx_deriving). And the way I think about it works is similar to [`procedural macros`](https://doc.rust-lang.org/reference/procedural-macros.html#:~:text=Procedural%20macros%20allow%20you%20to,crate%20type%20of%20proc%2Dmacro%20.) in rust. While the idea in rust might have been inspired from OCaml it makes more sense to explain things in terms of the language which is in the current zeitgeist (for now :P). So it takes the type and generates some functions for the `token_type`.
+The only thing that I am not going to explain is the `[@@@deriving show { with_path = false }, eq, ord]` part because the only thing I know is that it's a `ppx` and this specific ppx is [`ppx_deriving`](https://github.com/ocaml-ppx/ppx_deriving). And the way I think about how it works is similar to [`procedural macros`](https://doc.rust-lang.org/reference/procedural-macros.html#:~:text=Procedural%20macros%20allow%20you%20to,crate%20type%20of%20proc%2Dmacro%20.) in rust. While the idea in rust might have been inspired from OCaml it makes more sense to explain things in terms of the language which is in the current zeitgeist (for now :P). So it takes the type and generates some functions for the `token_type`.
 
 One of those functions is `show_token_type` which converts the type to string and it's something that I have used in my source code. The following code displays that :
 
