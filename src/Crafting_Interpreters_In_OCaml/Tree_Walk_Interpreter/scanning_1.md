@@ -1,3 +1,7 @@
+---
+marp: false
+---
+
 # <p style="text-align: center;"> Scanner </p>
 
 Unlike crafting interpreters which uses classes to write different aspects of a scanner we are going to using the `Module` feature in OCaml to write the different parts of Scanner.
@@ -26,8 +30,7 @@ Looking at the definition above and also looking at how OCaml functions look lik
 
 I have taken the liberty to copy the name from [Crafting Interpreters]() also you might think what is a `token list` and you might be correct to point out that it's not intutive. But think of this as foreshadowing (a coverup for my bad writing skills). The only think that you gotta know is `token list` is a way to `List<token>` in Java or `A List of token` in English.
 
-Before we define what a token is we need to define a `token_type` which is the enum mentioned in [Scanning](https://craftinginterpreters.com/scanning.html) chapter in [Crafting Interpreters](). Also the I've copied most of the scanner code from https://github.com/ludwigpacifici/saumon.
-
+Before we define what a token is we need to define a `token_type` which is the enum mentioned in [Scanning](https://craftinginterpreters.com/scanning.html) chapter in [Crafting Interpreters](). Also the I've copied most of the scanner code from [here](https://github.com/ludwigpacifici/saumon).
 Just to make things clear there are some things that I have changed to make sense for me but I wanted to mention the great work done by the good samaritan mentioned above.
 
 ## <p style="text-align: center;"> The token type </p>
