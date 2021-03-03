@@ -1,7 +1,3 @@
----
-marp: false
----
-
 # <p style="text-align: center;"> Scanner </p>
 
 Unlike crafting interpreters which uses classes to write different aspects of a scanner we are going to using the `Module` feature in OCaml to write the different parts of Scanner.
